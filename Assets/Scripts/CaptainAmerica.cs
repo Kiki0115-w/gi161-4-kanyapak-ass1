@@ -2,13 +2,9 @@
 using UnityEngine;
 
 
-class CaptainAmeriac : SuperHero
+public class CaptainAmeriac : SuperHero
 {
-    public CaptainAmeriac(string newName, int newHp, string newSuitColor)
-        : base(newName, newHp, newSuitColor)
-    {
-
-    }
+   
 
     public void LeapAndJump()
     {

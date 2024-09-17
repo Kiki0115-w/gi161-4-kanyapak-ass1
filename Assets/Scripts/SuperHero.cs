@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SuperHero
+public class SuperHero : MonoBehaviour
 {
     // Attributes
     protected string name;
@@ -31,28 +31,13 @@ public class SuperHero
     public int Hp { get { return hp; } set { hp = value; } }
 
 
-    
     public string SuitColor { get; private set; }  // ใส่ protected ก็ได้ตรง 
-
 
 
     private float armorStrength;
 
-    
 
-    
-    
-    
-
-
-    public SuperHero(string newName, int newHp, string newSuitColor)
-    {
-        name = newName;
-        hp = newHp;
-        SuitColor = newSuitColor;
-
-        armorStrength = 10;
-    }
+   
 
     public void TakeDamage(int damage)
     {
